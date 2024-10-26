@@ -1,11 +1,12 @@
 import './App.css'
+import Nav from './components/Nav'
 
 function App() {
 
 
   return (
     <>
-      <h1 className='font-bold'>asdf</h1>
+      <Nav></Nav>
     </>
   )
 }
