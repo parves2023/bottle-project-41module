@@ -1,0 +1,18 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Catcher in the Rye",
+      "totalPages": 277
+    },
+    {
+      "bookId": 2,
+      "bookName": "To Kill a Mockingbird",
+      "totalPages": 324
+    },
+    {
+      "bookId": 3,
+      "bookName": "1984",
+      "totalPages": 328
+    }
+  ]
+  

@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/grN0vzQ/depositphotos-5691403-stock-photo-symbol-of-knowledge.webp",
+    "review": "A timeless classic capturing teenage angst and the struggles of identity.",
+    "totalPages": 277,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Classic", "Coming-of-Age"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 2,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/zfT7tJg/students-hipster-books-nerd-glasses-university-retro-students-117731774.webp",
+    "review": "A powerful exploration of racial injustice and childhood innocence in the Deep South.",
+    "totalPages": 324,
+    "rating": 4.8,
+    "category": "Historical Fiction",
+    "tags": ["Social Issues", "Classic"],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 3,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/kQCYwfm/stack-colorful-books-eyeglasses-top-backlit-vibrant-light-knowledge-education-concept-327720429.webp",
+    "review": "A haunting vision of a dystopian future that feels increasingly relevant today.",
+    "totalPages": 328,
+    "rating": 4.6,
+    "category": "Dystopian",
+    "tags": ["Political", "Psychological"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/BZVvHrP/stack-books-against-background-library-600nw-2459213053.webp",
+    "review": "A tragic story of love, wealth, and ambition set in the Roaring Twenties.",
+    "totalPages": 180,
+    "rating": 4.2,
+    "category": "Novel",
+    "tags": ["Classic", "American Dream"],
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 5,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/V9gcfBf/mikolaj-DCzpr09c-TXY-unsplash.jpg",
+    "review": "A witty and romantic novel that critiques societal expectations.",
+    "totalPages": 279,
+    "rating": 4.5,
+    "category": "Romance",
+    "tags": ["Classic", "Society"],
+    "publisher": "T. Egerton",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/f1qV9cH/book-composition-with-open-book-23-2147690555.jpg",
+    "review": "An enchanting journey through Middle-Earth, filled with adventure and friendship.",
+    "totalPages": 310,
+    "rating": 4.7,
+    "category": "Fantasy",
+    "tags": ["Adventure", "Epic"],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937
+  }
+]

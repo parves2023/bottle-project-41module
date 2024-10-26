@@ -1,8 +1,40 @@
 
+import { NavLink } from 'react-router-dom';
+
 
 function Nav() {
+  const theLi = (
+    <>
+      <li>
+        <NavLink 
+          to="/" 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink 
+          to="/listed-book" 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Listed Book
+        </NavLink>
+      </li>
+      <li>
+        <NavLink 
+          to="/pages-to-read" 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Pages to Read
+        </NavLink>
+      </li>
+    </>
+  );
+
+  
   return (
-    <div>
+    <div className='container mx-auto'>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -26,33 +58,14 @@ function Nav() {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+             {theLi}
             </ul>
           </div>
           <a className="font-bold text-2xl">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-                <a >Listed Book</a>
-                
-         
-            </li>
-            <li>
-              <a>Pages to Read</a>
-            </li>
+          {theLi}
           </ul>
         </div>
         <div className="navbar-end gap-3">
