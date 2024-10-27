@@ -25,7 +25,7 @@ function Books() {
         <h1 className=" text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-center">
           Books {books.length}
         </h1>
-        <div className="grid grid-cols-3 gap-3 my-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 my-5">
           {/* card 1 */}
           {books.map((book) => (
             <div

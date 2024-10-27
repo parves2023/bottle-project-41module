@@ -1,4 +1,3 @@
-
 import {
   BarChart,
   Bar,
@@ -6,16 +5,11 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  Cell
+  Cell,
 } from 'recharts';
 
-const PagesToRead = () => {
-  // Example data for read-listed books
-  const readBooks = [
-    { bookName: 'The Catcher in the Rye', totalPages: 277 },
-    { bookName: 'To Kill a Mockingbird', totalPages: 324 },
-    { bookName: '1984', totalPages: 328 },
-  ];
+const PagesToRead = ({ allBooks }) => {
+  const totalPages = allBooks.reduce((acc, book) => acc + book.totalPages, 0);
 
   const CustomBarShape = (props) => {
     const { fill, x, y, width, height } = props;
@@ -27,7 +21,7 @@ const PagesToRead = () => {
           width={width}
           height={height}
           fill={fill}
-          rx={10} // Rounded corners
+          rx={10} 
           ry={10}
         />
       </g>
@@ -36,14 +30,24 @@ const PagesToRead = () => {
 
   return (
     <div className="container mx-auto mt-5">
-      <h2 className="text-2xl font-bold mb-4">Pages to Read</h2>
+      <h2 className="text-2xl font-bold mb-4">Total Pages to Read: {totalPages}</h2>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={readBooks}>
-          <XAxis dataKey="bookName" />
-          <YAxis />
+        <BarChart
+          data={allBooks}
+          margin={{ top: 20, right: 10, left: 10, bottom: 5 }}
+          barCategoryGap="10%"
+        >
+          <XAxis
+            dataKey="bookName"
+            angle={0}
+            textAnchor="middle"
+            interval={0}
+            height={60}
+          />
+          <YAxis label={{ value: 'Pages', angle: -90, position: 'insideLeft' }} />
           <Tooltip />
-          <Bar dataKey="totalPages" shape={CustomBarShape}>
-            {readBooks.map((entry, index) => (
+          <Bar dataKey="totalPages" shape={CustomBarShape} barSize={40}>
+            {allBooks.map((entry, index) => (
               <Cell key={`cell-${index}`} fill="#8884d8" />
             ))}
           </Bar>

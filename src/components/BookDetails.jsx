@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 
-function BookDetails({handleaddToRead}) {
+function BookDetails({handleaddToRead,handleAddToWishList}) {
   const { bookId } = useParams();
   const [book, setBook] = useState(null);
 
@@ -66,7 +66,7 @@ function BookDetails({handleaddToRead}) {
                 <button onClick={()=> handleaddToRead(book)} className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
                   Read
                 </button>
-                <button className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400">
+                <button onClick={()=> handleAddToWishList(book)} className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400">
                   Wishlist
                 </button>
               </div>

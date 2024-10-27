@@ -29,8 +29,25 @@ function Nav() {
           Pages to Read
         </NavLink>
       </li>
+      <li>
+        <NavLink 
+          to="/about" // New link for About
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink 
+          to="/contact" // New link for Contact
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Contact
+        </NavLink>
+      </li>
     </>
   );
+  
 
   
   return (
